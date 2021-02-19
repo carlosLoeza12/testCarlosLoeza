@@ -127,7 +127,6 @@ public class detailMovieInteractor implements detailMovieInterface.interactor {
 
     @Override
     public void getDurationMobieInteractor(int duration, detailMovieInterface.listenerDetailMovie listenerDetailMovie) {
-
         listenerDetailMovie.loadDurationListener(String.valueOf(duration));
     }
 }

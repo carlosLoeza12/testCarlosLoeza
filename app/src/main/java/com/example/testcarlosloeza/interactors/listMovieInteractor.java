@@ -28,7 +28,6 @@ public class listMovieInteractor implements listMovieInterface.interactor {
     private Context context;
     private ArrayList<listMovieEntity> listMovie;
 
-
     public listMovieInteractor(listMoviePresenter moviePresenter, Context context) {
         this.moviePresenter = moviePresenter;
         this.context = context;
