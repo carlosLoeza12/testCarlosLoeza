@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">testCarlosLoeza</string>
+    <string name="apiKeyMovie">a28c4bc831b590dc669ef8a459fdbff7</string>
+    <string name="api_detail_movie">https://api.themoviedb.org/3/movie/</string>
+    <string name="error_connection">Error de conexión</string>
+    <string name="deatil_movie">detail movie</string>
+    <string name="title_movie">Titulo</string>
+    <string name="duration_movie">Duración:</string>
+    <string name="release_movie">Fecha de estreno:</string>
+    <string name="vote_movie">Calificación:</string>
+    <string name="genre_movie">Generos:</string>
+    <string name="description_movie">Descripción:</string>
+    <string name="date_release_movie">Fecha de estreno:</string>
+    <string name="baseConfiguration">https://image.tmdb.org/t/p/w500/</string>
+
+</resources>

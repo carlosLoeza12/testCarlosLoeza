@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skydoves.elasticviews.ElasticCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgPhotoMovie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_not_available" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/shadow_black">
+
+            <TextView
+                android:id="@+id/txtTitleMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/title_movie"
+                android:textColor="@color/white">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtDateReleaseMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitleMovie"
+                android:layout_margin="5dp"
+                android:text="@string/date_release_movie"
+                android:textColor="@color/white">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitleMovie"
+                android:layout_alignRight="@id/txtDateReleaseMovie"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/img_star">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txtVoteMovie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="0.0"
+                    android:textColor="@color/white">
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.skydoves.elasticviews.ElasticCardView>
